@@ -3233,7 +3233,7 @@ if page == 'Single':
             if q:
                 with col2:
                     st.subheader("Comparisons among the single use implementations")
-                    tab1,tab2,tab3= st.tabs(["graph","Table_N","Table_P"])
+                    tab1,tab2,tab3= st.tabs(["Comparisons","Cost Overview","Cost Structure"])
                     def bioretention(p1,p2):
                         objective_1 = 29631*(p1*p2)**0.026 
                         objective_2 = (98-(117.1*(2.718)**(-5.21*(p2))))
@@ -17533,4 +17533,5 @@ else:
                                          size=20,
                                          color='black',
                                          )))
+
                         st.plotly_chart(fig, use_container_width=True)
