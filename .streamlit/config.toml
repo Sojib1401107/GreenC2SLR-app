@@ -1,8 +1,18 @@
 [theme]
 base="light"
-primaryColor="#146C2E"
-backgroundColor="#F3F5B6"
-secondaryBackgroundColor="#E6EE9C"
+
+# Widget accent green
+primaryColor="#49A65A"
+
+# Main page yellow background
+backgroundColor="#D8E09A"
+
+# Sidebar light green panel
+secondaryBackgroundColor="#4AA65A"
+
+# Text
 textColor="#000000"
+
 font="serif"
+
 
