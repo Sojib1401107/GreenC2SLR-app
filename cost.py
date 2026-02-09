@@ -203,7 +203,18 @@ if page == 'Single':
     col1, col2 = st.columns([1, 3])
     with col1:
         options1=['Bioretention','Dry Pond','Constructed Wetland','Grassed Swale','Infiltration Trench','Porous Pavement','Vegetative Filter Bed','Wet Pond','Overview']
-        SCM_type= st.selectbox('Type of SCM:',options1)
+       # Read SCM sent from ArcGIS URL
+scm = st.query_params.get("scm", "Bioretention")
+
+if isinstance(scm, list):
+    scm = scm[0]
+
+SCM_type = st.selectbox(
+    'Type of SCM:',
+    options1,
+    index=options1.index(scm) if scm in options1 else 0
+)
+
         if SCM_type=='Bioretention':
             number = st.number_input('Available Area(sft)')
             tn= st.number_input('Initial Total Nitrogene Concentration (lb)')
@@ -17535,3 +17546,4 @@ else:
                                          )))
 
                         st.plotly_chart(fig, use_container_width=True)
+
