@@ -190,34 +190,47 @@ def NSGA2_create_next_generation(pop,fitnesses,config):
     new_pop = np.concatenate([surviving_individuals,offsprings])  # concatenate the 2 lists
     return new_pop
 
-#Development of the UI
+# Development of the UI
 st.set_page_config(layout="wide")
 st.title("GreenC²SLR: Cost Effective Green Infrastructure under Climate Change and Sea Level Rise")
 
-add_selectbox1 = st.sidebar.title("OPTIONS")
+st.sidebar.title("OPTIONS")
+
 with st.sidebar:
     page_names = ['Single','Series']
-    page= st.radio('Type of Implementation',page_names)
-    
+    page = st.radio('Type of Implementation', page_names)
+
 if page == 'Single':
+
     col1, col2 = st.columns([1, 3])
+
     with col1:
-        options1=['Bioretention','Dry Pond','Constructed Wetland','Grassed Swale','Infiltration Trench','Porous Pavement','Vegetative Filter Bed','Wet Pond','Overview']
-       # Read SCM sent from ArcGIS URL
-scm = st.query_params.get("scm", "Bioretention")
 
-if isinstance(scm, list):
-    scm = scm[0]
+        options1 = [
+            'Bioretention','Dry Pond','Constructed Wetland',
+            'Grassed Swale','Infiltration Trench',
+            'Porous Pavement','Vegetative Filter Bed',
+            'Wet Pond','Overview'
+        ]
 
-SCM_type = st.selectbox(
-    'Type of SCM:',
-    options1,
-    index=options1.index(scm) if scm in options1 else 0
-)
+        scm = st.query_params.get("scm", "Bioretention")
 
-        if SCM_type=='Bioretention':
+        if isinstance(scm, list):
+            scm = scm[0]
+
+        SCM_type = st.selectbox(
+            'Type of SCM:',
+            options1,
+            index=options1.index(scm) if scm in options1 else 0
+        )
+
+    
+        if SCM_type == 'Bioretention':
+
             number = st.number_input('Available Area(sft)')
-            tn= st.number_input('Initial Total Nitrogene Concentration (lb)')
+            tn = st.number_input('Initial Total Nitrogene Concentration (lb)')
+            tp = st.number_input('Initial Total Phosphorus Concentration (lb)')
+
             tp= st.number_input('Initial Total Phosphorus Concentration (lb)')
             removal = st.slider('Required Nutrient Reduction', 0.0, 100.0, 0.5)
             con_level = st.slider('Confidence interval', 0.0, 25.0)
@@ -226,7 +239,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Bioretention")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2):
                         objective_1 = 29631*(p1*p2)**0.026 
                         objective_2 = (98-(117.1*(2.718)**(-5.21*(p2))))
@@ -568,7 +581,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Dry Pond")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2):
                         objective_1 = 10525*(p1*p2)**0.29 
                         objective_2 = (98.26-(109.04*(2.718)**(-5.75*(p2))))
@@ -881,7 +894,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Constructed Wetland")
-                    tab1,tab2,tab3= st.tabs(["graph","Table","Cost"])
+                    tab1,tab2,tab3= st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func_tn(p1,p2):
                         objective_1 = 1875*(p1*p2)**0.503 
                         objective_2 = (4389.78*(p2)**0.012)-4266.26
@@ -1354,7 +1367,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Grassed Swale")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2):
                         objective_1 = 42504*(p1*p2)**0.0344 
                         objective_2 = (97.7936-(107.28*(2.718)**(-5.85*(p2))))
@@ -1666,7 +1679,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Infiltration Trench")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2):
                         objective_1 = 27632*(p1*p2)**0.0431 
                         objective_2 = (63767.5*(p2)**0.000285)-63679.2
@@ -1977,7 +1990,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Porous Pavement")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2):
                         objective_1 = 40540*(p1*p2)**0.0327 
                         objective_2 = (97.9016-(105.3*(2.718)**(-5.51*(p2))))
@@ -2290,7 +2303,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Vegetative Filter Bed")
-                    tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(["graph_N","Graph_P","Table_N","Table_P","Cost_N","Cost_P"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func_tp(p1,p2):
                         objective_1 = 687.5*(p1*p2)**0.59 
                         objective_2 = (584.706*(p2)**0.012)-560.448
@@ -2769,7 +2782,7 @@ SCM_type = st.selectbox(
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Wet Pond")
-                    tab1,tab2,tab3,tab4,tab5,tab6 = st.tabs(["graph","Tabl","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func_tn(p1,p2):
                         objective_1 = 1875*(p1*p2)**0.503 
                         objective_2 = (4389.78*(p2)**0.012)-4186.26
@@ -5202,7 +5215,7 @@ else:
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Bioretention & Dry Pond")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2,p3,p4):
                         objective_1 = 29631*(p1*p2)**0.026 + 10525*(p3*p4)**0.29   
                         objective_2 = ((98-(117.1*(2.718)**(-5.21*(p2))))*(98.26-(109.04*(2.718)**(-5.75*(p4)))))/100
@@ -5464,7 +5477,7 @@ else:
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Bioretention & Porous Pavement")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2,p3,p4):
                         objective_1 = 29631*(p1*p2)**0.026 + 40540*(p3*p4)**0.0327   
                         objective_2 = ((98-(117.1*(2.718)**(-5.21*(p2))))*(97.9016-(105.3*(2.718)**(-5.51*(p4)))))/100
@@ -5726,7 +5739,7 @@ else:
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Bioretention")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2,p3,p4):
                         objective_1 = 29631*(p1*p2)**0.026 + 42504*(p3*p4)**0.0344    
                         objective_2 = ((98-(117.1*(2.718)**(-5.21*(p2))))*(97.7936-(107.28*(2.718)**(-5.85*(p4)))))/100
@@ -5990,7 +6003,7 @@ else:
             if q:
                 with col2:
                     st.subheader("Optimal Outcomes for Bioretention")
-                    tab1,tab2,tab3 = st.tabs(["graph","table","Cost"])
+                    tab1,tab2,tab3 = st.tabs(["Pareto Optimal Curve","Possible Outcomes","Cost Structure"])
                     def simple_1d_fitness_func(p1,p2,p3,p4):
                         objective_1 = 29631*(p1*p2)**0.026 + 27632*(p3*p4)**0.0431    
                         objective_2 = ((98-(117.1*(2.718)**(-5.21*(p2))))*((63767.5*(p4)**0.000285)-63679.2))/100
@@ -17546,4 +17559,5 @@ else:
                                          )))
 
                         st.plotly_chart(fig, use_container_width=True)
+
 
