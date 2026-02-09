@@ -231,7 +231,6 @@ if page == 'Single':
             tn = st.number_input('Initial Total Nitrogene Concentration (lb)')
             tp = st.number_input('Initial Total Phosphorus Concentration (lb)')
 
-            tp= st.number_input('Initial Total Phosphorus Concentration (lb)')
             removal = st.slider('Required Nutrient Reduction', 0.0, 100.0, 0.5)
             con_level = st.slider('Confidence interval', 0.0, 25.0)
             st.write(removal, '% Nutrient Reduction is needed')
@@ -17559,5 +17558,6 @@ else:
                                          )))
 
                         st.plotly_chart(fig, use_container_width=True)
+
 
 
