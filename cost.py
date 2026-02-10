@@ -189,24 +189,44 @@ def NSGA2_create_next_generation(pop,fitnesses,config):
     new_pop = np.concatenate([surviving_individuals,offsprings])  # concatenate the 2 lists
     return new_pop
 
-#Development of the UI
+# Development of the UI
 st.set_page_config(layout="wide")
 st.title("GreenC²SLR: Cost Effective Green Infrastructure under Climate Change and Sea Level Rise")
 
-add_selectbox1 = st.sidebar.title("OPTIONS")
+st.sidebar.title("OPTIONS")
+
 with st.sidebar:
     page_names = ['Single','Series']
-    page= st.radio('Type of Implementation',page_names)
-    
+    page = st.radio('Type of Implementation', page_names)
+
 if page == 'Single':
+
     col1, col2 = st.columns([1, 3])
+
     with col1:
-        options1=['Bioretention','Dry Pond','Constructed Wetland','Grassed Swale','Infiltration Trench','Porous Pavement','Vegetative Filter Bed','Wet Pond','Overview']
-        SCM_type= st.selectbox('Type of SCM:',options1)
-        if SCM_type=='Bioretention':
+
+        options1 = [
+            'Bioretention','Dry Pond','Constructed Wetland',
+            'Grassed Swale','Infiltration Trench',
+            'Porous Pavement','Vegetative Filter Bed',
+            'Wet Pond','Overview'
+        ]
+
+        scm = st.query_params.get("scm", "Bioretention")
+
+        if isinstance(scm, list):
+            scm = scm[0]
+
+        SCM_type = st.selectbox(
+            'Type of SCM:',
+            options1,
+            index=options1.index(scm) if scm in options1 else 0
+        )
+        if SCM_type == 'Bioretention':
+
             number = st.number_input('Available Area(sft)')
-            tn= st.number_input('Initial Total Nitrogene Concentration (lb)')
-            tp= st.number_input('Initial Total Phosphorus Concentration (lb)')
+            tn = st.number_input('Initial Total Nitrogene Concentration (lb)')
+            tp = st.number_input('Initial Total Phosphorus Concentration (lb)')
             removal = st.slider('Required Nutrient Reduction', 0.0, 100.0, 0.5)
             con_level = st.slider('Confidence interval', 0.0, 25.0)
             st.write(removal, '% Nutrient Reduction is needed')
@@ -17923,4 +17943,5 @@ else:
                                          color='black',
                                          )))
                         st.plotly_chart(fig1, use_container_width=True)
+
 
