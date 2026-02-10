@@ -1,11 +1,11 @@
 
+
 import streamlit as st
 import functools
 import pandas as pd
 import numpy as np
 from plotly.subplots import make_subplots
 import plotly.express as px
-from plotly.subplots import make_subplots
 import plotly.graph_objects as go
 from scipy.optimize import curve_fit
 def dominates(fitnesses_1,fitnesses_2):
@@ -318,7 +318,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -332,7 +332,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -346,7 +346,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -486,7 +486,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -498,7 +498,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -660,7 +660,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -674,7 +674,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -688,7 +688,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -827,7 +827,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -839,7 +839,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1003,7 +1003,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1017,7 +1017,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1031,7 +1031,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1171,7 +1171,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1183,7 +1183,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1303,7 +1303,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1315,7 +1315,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1446,7 +1446,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1460,7 +1460,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1474,7 +1474,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1613,7 +1613,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1625,7 +1625,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1758,7 +1758,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1772,7 +1772,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1786,7 +1786,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -1925,7 +1925,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -1937,7 +1937,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2069,7 +2069,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2083,7 +2083,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2097,7 +2097,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2236,7 +2236,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2248,7 +2248,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2413,7 +2413,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2427,7 +2427,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2441,7 +2441,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2581,7 +2581,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2593,7 +2593,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2713,7 +2713,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2725,7 +2725,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -2892,7 +2892,7 @@ if page == 'Single':
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2906,7 +2906,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -2920,7 +2920,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3060,7 +3060,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -3072,7 +3072,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -3192,7 +3192,7 @@ if page == 'Single':
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -3204,7 +3204,7 @@ if page == 'Single':
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -3781,7 +3781,7 @@ if page == 'Single':
                                          showgrid=False,
                                          
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3796,7 +3796,7 @@ if page == 'Single':
                                          showgrid=False,
                                          linecolor='black',
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3810,7 +3810,7 @@ if page == 'Single':
                         fig.update_xaxes(showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3824,7 +3824,7 @@ if page == 'Single':
                         fig.update_xaxes(showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3838,7 +3838,7 @@ if page == 'Single':
                         fig.update_xaxes(showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3852,7 +3852,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3866,7 +3866,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3880,7 +3880,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Total Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3894,7 +3894,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -3908,7 +3908,7 @@ if page == 'Single':
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4077,7 +4077,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Construction Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4091,7 +4091,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Operation and Maintenance Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4105,7 +4105,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Material Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4119,7 +4119,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Labor Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4133,7 +4133,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Equipment Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4147,7 +4147,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Energy Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4161,7 +4161,7 @@ if page == 'Single':
                         fig1.update_yaxes(title_text="Others Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -4248,7 +4248,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4260,7 +4260,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4350,7 +4350,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4362,7 +4362,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4444,7 +4444,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4456,7 +4456,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4546,7 +4546,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4558,7 +4558,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4640,7 +4640,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4652,7 +4652,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4742,7 +4742,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4754,7 +4754,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4836,7 +4836,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4848,7 +4848,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4938,7 +4938,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -4950,7 +4950,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -5032,7 +5032,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -5044,7 +5044,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -5134,7 +5134,7 @@ if page == 'Single':
                                  showticklabels=True,
                                  linecolor='black',
                                  title='Cost (USD)',
-                                 titlefont=dict(
+                                title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -5146,7 +5146,7 @@ if page == 'Single':
                                      color='black',
                                      )),yaxis=dict(
                                          
-                                         titlefont=dict(
+                                        title_font=dict(
                                      family='Times New Roman',
                                      size = 25,
                                      color= 'black'),
@@ -5296,7 +5296,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5310,7 +5310,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5324,7 +5324,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5463,7 +5463,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -5475,7 +5475,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -5610,7 +5610,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5624,7 +5624,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5638,7 +5638,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5777,7 +5777,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -5789,7 +5789,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -5925,7 +5925,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5939,7 +5939,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -5953,7 +5953,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6092,7 +6092,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6104,7 +6104,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6242,7 +6242,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6256,7 +6256,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6270,7 +6270,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6409,7 +6409,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6421,7 +6421,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6587,7 +6587,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6601,7 +6601,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6615,7 +6615,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -6755,7 +6755,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6767,7 +6767,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6887,7 +6887,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -6899,7 +6899,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7066,7 +7066,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7080,7 +7080,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7094,7 +7094,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7234,7 +7234,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7246,7 +7246,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7366,7 +7366,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7378,7 +7378,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7544,7 +7544,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7558,7 +7558,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7572,7 +7572,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -7712,7 +7712,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7724,7 +7724,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7844,7 +7844,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7856,7 +7856,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -7993,7 +7993,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8007,7 +8007,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8021,7 +8021,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8160,7 +8160,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8172,7 +8172,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8309,7 +8309,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8323,7 +8323,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8337,7 +8337,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8476,7 +8476,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8488,7 +8488,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8624,7 +8624,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8638,7 +8638,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8652,7 +8652,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8791,7 +8791,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8803,7 +8803,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -8973,7 +8973,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -8987,7 +8987,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9001,7 +9001,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9141,7 +9141,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9153,7 +9153,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9273,7 +9273,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9285,7 +9285,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9452,7 +9452,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9466,7 +9466,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9480,7 +9480,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9620,7 +9620,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9632,7 +9632,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9752,7 +9752,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9764,7 +9764,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -9931,7 +9931,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9945,7 +9945,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -9959,7 +9959,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10099,7 +10099,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10111,7 +10111,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10231,7 +10231,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10243,7 +10243,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10379,7 +10379,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10393,7 +10393,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10407,7 +10407,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10546,7 +10546,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10558,7 +10558,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10694,7 +10694,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10708,7 +10708,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10722,7 +10722,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -10861,7 +10861,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -10873,7 +10873,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11038,7 +11038,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11052,7 +11052,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11066,7 +11066,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11206,7 +11206,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11218,7 +11218,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11338,7 +11338,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11350,7 +11350,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11517,7 +11517,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11531,7 +11531,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11545,7 +11545,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -11685,7 +11685,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11697,7 +11697,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11817,7 +11817,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11829,7 +11829,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -11996,7 +11996,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12010,7 +12010,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12024,7 +12024,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12164,7 +12164,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12176,7 +12176,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12296,7 +12296,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12308,7 +12308,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12444,7 +12444,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12458,7 +12458,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12472,7 +12472,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12611,7 +12611,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12623,7 +12623,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12790,7 +12790,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12804,7 +12804,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12818,7 +12818,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -12958,7 +12958,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -12970,7 +12970,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13090,7 +13090,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13102,7 +13102,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13269,7 +13269,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13283,7 +13283,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13297,7 +13297,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13437,7 +13437,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13449,7 +13449,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13569,7 +13569,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13581,7 +13581,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13748,7 +13748,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13762,7 +13762,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13776,7 +13776,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -13916,7 +13916,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -13928,7 +13928,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14048,7 +14048,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14060,7 +14060,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14226,7 +14226,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14240,7 +14240,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14254,7 +14254,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14394,7 +14394,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14406,7 +14406,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14526,7 +14526,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14538,7 +14538,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14705,7 +14705,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14719,7 +14719,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14733,7 +14733,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -14873,7 +14873,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -14885,7 +14885,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15005,7 +15005,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15017,7 +15017,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15183,7 +15183,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15197,7 +15197,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15211,7 +15211,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15351,7 +15351,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15363,7 +15363,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15483,7 +15483,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15495,7 +15495,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15664,7 +15664,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15678,7 +15678,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15692,7 +15692,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -15832,7 +15832,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15844,7 +15844,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15964,7 +15964,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -15976,7 +15976,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16145,7 +16145,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16159,7 +16159,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16173,7 +16173,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16313,7 +16313,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16325,7 +16325,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16445,7 +16445,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16457,7 +16457,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16627,7 +16627,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16641,7 +16641,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16655,7 +16655,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -16795,7 +16795,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16807,7 +16807,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16927,7 +16927,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -16939,7 +16939,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17111,7 +17111,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17125,7 +17125,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17139,7 +17139,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17279,7 +17279,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17291,7 +17291,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17411,7 +17411,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17423,7 +17423,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17595,7 +17595,7 @@ else:
                         fig.update_xaxes(title_text="Cost (USD)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17609,7 +17609,7 @@ else:
                         fig.update_yaxes(title_text="Nitrogene Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17623,7 +17623,7 @@ else:
                         fig.update_yaxes(title_text="Phosphorus Reduction (lb/year)",showline=True,
                                          showgrid=False,
                                          linecolor='black',
-                                         titlefont=dict(
+                                        title_font=dict(
                                              family='Times New Roman',
                                              size = 25,
                                             color= 'black'),
@@ -17763,7 +17763,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17775,7 +17775,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17895,7 +17895,7 @@ else:
                              showticklabels=True,
                              linecolor='black',
                              title='Cost (USD)',
-                             titlefont=dict(
+                            title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17907,7 +17907,7 @@ else:
                                  color='black',
                                  )),yaxis=dict(
                                      
-                                     titlefont=dict(
+                                    title_font=dict(
                                  family='Times New Roman',
                                  size = 25,
                                  color= 'black'),
@@ -17923,3 +17923,4 @@ else:
                                          color='black',
                                          )))
                         st.plotly_chart(fig1, use_container_width=True)
+
